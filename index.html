@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4" id="calc">
+                
+                <input type="text" class=" w-100 p-2 mb-3 text-end" id="result" placeholder="0" disabled><br>
+
+                <button onclick="displayContent('1')" type="button" class="btn btn-outline-secondary">1</button>
+                <button onclick="displayContent('2')" type="button" class="btn btn-outline-secondary">2</button>
+                <button onclick="displayContent('3')" type="button" class="btn btn-outline-secondary">3</button>
+                <button onclick="displayContent('+')" type="button" class="btn btn-secondary">+</button><br>
+                
+                <button onclick="displayContent('4')" type="button" class="btn btn-outline-secondary">4</button>
+                <button onclick="displayContent('5')" type="button" class="btn btn-outline-secondary">5</button>
+                <button onclick="displayContent('6')" type="button" class="btn btn-outline-secondary">6</button>
+                <button onclick="displayContent('-')" type="button" class="btn btn-secondary">-</button><br>
+                
+                <button onclick="displayContent('7')" type="button" class="btn btn-outline-secondary">7</button>
+                <button onclick="displayContent('8')" type="button" class="btn btn-outline-secondary">8</button>
+                <button onclick="displayContent('9')" type="button" class="btn btn-outline-secondary">9</button>
+                <button onclick="displayContent('*')" type="button" class="btn btn-secondary">*</button><br>
+                
+                <button onclick="displayClear()" type="button" class="btn btn-secondary">C</button>
+                <button onclick="displayContent('0')" type="button" class="btn btn-outline-secondary">0</button>
+                <button onclick="displayresult()" type="button" class="btn btn-secondary">=</button>
+                <button onclick="displayContent('/')" type="button" class="btn btn-secondary">/</button><br>
+                <button onclick="removeLastdigit()" type="button" class="btn btn-secondary w-100">&#9003</button>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
